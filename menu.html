@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Name - Menu</title>
+    <title>Warm & Brewed - Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
-    <!-- Header Section (same as index.html) -->
+    <!-- Header Section -->
     <header>
         <div class="container">
             <img src="images/logo.jpg" alt="Café Logo" id="logo">
-            <h1>Café Name</h1>
+            <h1>Warm & Brewed</h1>
             <div id="contact-info">
                 <p>Hours: 9am – 9pm</p>
                 <p>555-123-4567</p>
@@ -20,7 +21,7 @@
         </div>
     </header>
 
-    <!-- Navigation Section (same as index.html) -->
+    <!-- Navigation Section -->
     <nav>
         <div class="container">
             <ul>
@@ -41,67 +42,30 @@
                 <aside class="categories">
                     <h3>Categories</h3>
                     <ul>
-                        <li><a href="#breakfast">Breakfast</a></li>
-                        <li><a href="#lunch">Lunch</a></li>
-                        <li><a href="#dinner">Dinner</a></li>
-                        <li><a href="#dessert">Dessert</a></li>
-                        <li><a href="#sides">Sides</a></li>
-                        <li><a href="#drinks">Drinks</a></li>
+                        <li><button class="category-btn" data-category="breakfast">Breakfast</button></li>
+                        <li><button class="category-btn" data-category="lunch">Lunch</button></li>
+                        <li><button class="category-btn" data-category="dinner">Dinner</button></li>
+                        <li><button class="category-btn" data-category="dessert">Dessert</button></li>
+                        <li><button class="category-btn" data-category="sides">Sides</button></li>
+                        <li><button class="category-btn" data-category="drinks">Drinks</button></li>
                     </ul>
                 </aside>
 
                 <!-- Menu Items -->
-                <section class="menu-items">
-                    <h3 id="breakfast">Breakfast</h3>
-                    
-                    <div class="menu-item">
-                        <img src="images/Breakfast/pancakes.jpg" alt="Pancakes">
-                        <div class="menu-item-details">
-                            <h4>Fluffy Pancakes</h4>
-                            <p>Stack of golden pancakes served with maple syrup and butter.</p>
-                            <p>Price: $8.99</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item">
-                        <img src="images/Breakfast/french_toast.jpg" alt="French Toast">
-                        <div class="menu-item-details">
-                            <h4>Classic French Toast</h4>
-                            <p>Thick slices of bread dipped in a cinnamon-vanilla batter and grilled to perfection.</p>
-                            <p>Price: $9.99</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item">
-                        <img src="images/Breakfast/omelette.jpg" alt="Omelette">
-                        <div class="menu-item-details">
-                            <h4>Veggie Omelette</h4>
-                            <p>Three-egg omelette filled with sautéed vegetables and cheese.</p>
-                            <p>Price: $10.99</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item">
-                        <img src="images/Breakfast/bacon_croissant.jpg" alt="Bacon Croissant">
-                        <div class="menu-item-details">
-                            <h4>Bacon Croissant Sandwich</h4>
-                            <p>Buttery croissant filled with crispy bacon, egg, and cheese.</p>
-                            <p>Price: $7.99</p>
-                        </div>
-                    </div>
-
-                </section>
+				<section id="menu-items" class="menu-items">
+					<!-- Menu items will be dynamically inserted here by JavaScript -->
+				</section>
             </div>
         </div>
     </main>
 
-    <!-- Footer Section (same as index.html) -->
+    <!-- Footer Section -->
     <footer>
         <div class="container">
             <div id="social-media">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">Twitter</a>
             </div>
             <div id="newsletter">
                 <form>
