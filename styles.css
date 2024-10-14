@@ -1,0 +1,275 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 100px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.photo-gallery, .staff-picks-gallery, .meal-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo-gallery img, .staff-picks-gallery img, .meal-gallery img {
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .photo-gallery img, .staff-picks-gallery img, .meal-gallery img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery img, .staff-picks-gallery img, .meal-gallery img {
+        width: 100%;
+    }
+    
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Menu page styles */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories li {
+    margin-bottom: 10px;
+}
+
+.menu-items {
+    width: 75%;
+}
+
+.menu-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.menu-item-details {
+    flex-grow: 1;
+}
+
+
+/* About page styles */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: #4a2b0f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+}
+
+/* Contact page styles */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-form, .contact-info {
+    flex-basis: 48%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4a2b0f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #6b3e26;
+}
+
+.map-placeholder {
+    margin-top: 20px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .contact-form, .contact-info {
+        flex-basis: 100%;
+    }
+}
